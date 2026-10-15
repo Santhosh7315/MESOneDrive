@@ -7,7 +7,10 @@ const sqlite3 = require("sqlite3").verbose();
 const crypto = require("crypto");
 
 const app = express();
-const PORT = Number(process.env.PORT) || 3000;
+const PORT = process.env.X_ZOHO_CATALYST_PORT || process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 const HOST = process.env.HOST || "0.0.0.0";
 const DATA_DIR = path.resolve(process.env.DATA_DIR || __dirname);
 const FILES_DIR = path.resolve(process.env.FILES_DIR || path.join(DATA_DIR, "uploads"));
