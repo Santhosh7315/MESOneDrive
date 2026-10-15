@@ -2,9 +2,11 @@
   "name": "advanced-file-downloader",
   "version": "1.0.0",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "start": "node server.js"
+}
   "dependencies": {
     "archiver": "^6.0.2",
     "express": "^4.22.1",
