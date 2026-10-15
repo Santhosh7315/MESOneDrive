@@ -1,5 +1,5 @@
-# Advanced File Downloader
-
+<<<<<<< HEAD
+# MES OneDrive
 Node.js file portal with authenticated upload, download, multi-file ZIP download, search, and delete.
 
 ## Run locally
@@ -19,10 +19,10 @@ Open `http://localhost:3000`. For local development only, the initial credential
 2. Build and run with a persistent `/data` volume:
 
 ```sh
-docker build -t advanced-file-downloader .
-docker run -d --name advanced-file-downloader --restart unless-stopped \
+docker build -t MES-one-drive .
+docker run -d --name MES-one-drive --restart unless-stopped \
   --env-file .env -p 3000:3000 -v downloader-data:/data \
-  advanced-file-downloader
+  MES-one-drive
 ```
 
 Put the service behind an HTTPS reverse proxy for public hosting. The secure session cookie is enabled when `NODE_ENV=production`.
@@ -46,3 +46,7 @@ Use persistent storage for both the SQLite database and `FILES_DIR`. The former 
 ## Health check
 
 `GET /health` returns `{"status":"ok"}` and can be used by a hosting platform's liveness probe.
+=======
+# MESOneDrive
+Advanced file downloader application
+>>>>>>> d7ebc817953ca589fa9aa2650d4ab1529506ca34
