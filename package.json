@@ -1,0 +1,21 @@
+{
+  "name": "advanced-file-downloader",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "archiver": "^6.0.2",
+    "express": "^4.22.1",
+    "multer": "^1.4.5-lts.1",
+    "sqlite3": "^5.1.7"
+  },
+  "description": "Authenticated web portal for managing uploaded files",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  }
+}
