@@ -1,0 +1,23 @@
+{
+  "name": "mes-one-drive",
+  "version": "1.0.0",
+  "description": "Authenticated web portal for managing uploaded files",
+  "main": "server.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "vite": "^5.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
